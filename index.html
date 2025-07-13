@@ -64,21 +64,38 @@
 									<div class="left">Bone Permanent Upgrade Level: </div>
 									<input class="right" id="input_bone_void_maps" type="number" min="0" max="10"></input>
 								</div>
-								<div class="child">
-									<div class="left">Void Specialization I: </div>
-									<input class="right" id="input_void_spec_I" type="checkbox"></input>
+								<div class="child" id="voidSpecElem">
+									<div class="left">Void Specialization: </div>
+									<div class="right" style="display: flex; justify-content: flex-end; gap: 16px;">
+										<label style="display: flex; align-items: center;">
+											1 <input id="input_void_spec_I" type="checkbox" style="margin-left: 5px;"></input>
+										</label>
+										<label style="display: flex; align-items: center;">
+											2 <input id="input_void_spec_II" type="checkbox" style="margin-left: 5px;"></input>
+										</label>
+									</div>
+								</div>	
+								<div class="child" id="fluffyElem">
+									<div class="left" title="The checkboxes to the right are the Fluffy ability numbers, so ability 12 would be obtained from E2L10 and 17 would be from E7L10.">Fluffy <span class="text-color-help">(?)</span>: </div>
+									<div class="right" style="display: flex; justify-content: flex-end; gap: 8px;">
+										<label style="display: flex; align-items: center;">
+											12 <input id="input_voidance" type="checkbox" style="margin-left: 5px;"></input>
+										</label>
+										<label style="display: flex; align-items: center;">
+											17 <input id="input_voidelicious" type="checkbox" style="margin-left: 5px;"></input>
+										</label>
+									</div>
 								</div>
-								<div class="child">
-									<div class="left">Void Specialization II: </div>
-									<input class="right" id="input_void_spec_II" type="checkbox"></input>
-								</div>
-								<div class="child" id="voidanceElem">
-									<div class="left">Fluffy E2L10: </div>
-									<input class="right" id="input_voidance" type="checkbox"></input>
-								</div>
-								<div class="child" id="voideliciousElem">
-									<div class="left">Fluffy E7L10: </div>
-									<input class="right" id="input_voidelicious" type="checkbox"></input>
+								<div class="child" id="scruffyElem">
+									<div class="left" title="The checkboxes to the right are the Scruffy ability numbers.">Scruffy <span class="text-color-help">(?)</span>: </div>
+									<div class="right" style="display: flex; justify-content: flex-end; gap: 8px;">
+										<label style="display: flex; align-items: center;">
+											18 <input id="input_more_void" type="checkbox" style="margin-left: 5px;"></input>
+										</label>
+										<label style="display: flex; align-items: center;">
+											27 <input id="input_even_more_void" type="checkbox" style="margin-left: 5px;"></input>
+										</label>
+									</div>
 								</div>
 								<div class="child">
 									<div class="left" title="This checkbox will allow the calculator to include the free void map every 10th zone cleared when wearing a Hazardous (or above) rarity heirloom.">Hazardous Heirloom <span class="text-color-help">(?)</span>: </div>
@@ -87,14 +104,6 @@
 								<div class="child" id="nurtureElem">
 									<div class="left" title="This checkbox will allow the calculator to include the Nurture challenges VMDC bonus. It assumes you have the Cruffys level 4 bonus (20% VMDC) from zone 2 until zone 150.">Nurture <span class="text-color-help">(?)</span>: </div>
 									<input class="right" id="input_nurture" type="checkbox"></input>
-								</div>
-								<div class="child" id="moreVoidElem">
-									<div class="left">Scruffy 18: </div>
-									<input class="right" id="input_more_void" type="checkbox"></input>
-								</div>
-								<div class="child" id="evenMoreVoidElem">
-									<div class="left">Scruffy 27: </div>
-									<input class="right" id="input_even_more_void" type="checkbox"></input>
 								</div>
 								<br>
 								<div class="child attention" id="table_mode_voids">

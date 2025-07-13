@@ -723,8 +723,8 @@ var Simulator = (function () {
 
 	function onUniverseChange(universe = document.getElementById("input_universe").value) {
 		var show = {
-			1: ["voidanceElem", "voideliciousElem"],
-			2: ["voidMaxClearedElem", "nurtureElem", "moreVoidElem", "evenMoreVoidElem"]
+			1: ["fluffyElem"],
+			2: ["voidMaxClearedElem", "scruffyElem", "nurtureElem"]
 		};
 
 		if (typeof universe === "object") universe = universe.value;
