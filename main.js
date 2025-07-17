@@ -250,7 +250,7 @@ var Simulator = (function () {
 						}
 					}
 
-					actualGoldenBonus = universe === 2 && nurture && i > 1 && i < 150 ? goldenBonus + 0.2 : goldenBonus;
+					actualGoldenBonus = universe === 2 && nurture && i > 3 && i < 151 ? goldenBonus + 0.2 : goldenBonus;
 
 					if (i >= startZone) {
 						if (i === startZone) 
