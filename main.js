@@ -291,6 +291,8 @@ var Simulator = (function () {
 
 							if (chance < 0) 
 								continue;
+							
+							seed++;
 							if (Simulator.seededRandom(seed++) >= chance) 
 								continue;
 
