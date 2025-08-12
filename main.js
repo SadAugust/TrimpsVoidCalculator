@@ -274,6 +274,7 @@ var Simulator = (function () {
 							min *= 1 - heirloomPrc;
 							min *= 1 - actualGoldenBonus;
 
+							seed++;
 							var chance = Math.floor((_lastVoidMap - min) / 10) / 50000;
 							_lastVoidMap++;
 
@@ -292,7 +293,6 @@ var Simulator = (function () {
 							if (chance < 0) 
 								continue;
 							
-							seed++;
 							if (Simulator.seededRandom(seed++) >= chance) 
 								continue;
 
